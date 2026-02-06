@@ -1,0 +1,53 @@
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  padding: 1rem;
+  background: rgb(18, 18, 18);
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .user-content {
+    a {
+      margin-left: 10px;
+    }
+  }
+
+  p {
+    margin: 0
+  }
+
+  .copy-btn {
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copy-svg {
+    width: 15px;
+    height: auto;
+
+    path {
+      fill: #fff;
+    }
+  }
+}
